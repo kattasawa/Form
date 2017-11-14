@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form assignment</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <h1>invitation form</h1>
+
+    <form action="https://httpbin.org/anything" method="post">
+
+
+
+      <ul class="flex-outer">
+
+      <div>
+        <label>Email:<br>
+          <input type="email" name="email" />
+        </label>
+      </div>
+
+      <div>
+        <label>Password:<br>
+          <input type="password" name="password" />
+        </label>
+      </div>
+
+      <div>
+        <label>Message:<br>
+          <textarea name="message" rows="4" cols="30"></textarea>
+        </label>
+      </div>
+
+
+
+      <div>
+        <div class="text">
+          <label>Can you attend?<br>
+        </div>
+          <ul class="flex-inner">
+            <input type="radio" name="attend" value="male" checked> Yes, I´ll be there!<br>
+            <input type="radio" name="attend" value="female"> Sorry, can´t make it
+        </ul>
+        </label>
+      </div>
+
+      <div>
+        <div class="text">
+          <label>From where did you get this invitation?<br>
+        </div>
+          <ul class="flex-inner">
+            <input type="checkbox" name="checkbox" value="friend"/> From a friend<br>
+            <input type="checkbox" name="checkbox" value="web"/> From the web<br>
+            <input type="checkbox" name="checkbox" value="other"/> Other
+          </ul>
+        </label>
+      </div>
+
+      <button class="button"><span>Submit </span></button>
+
+
+
+      </ul>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,86 @@
+body{
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  font-size: 10px;
+  background-image: url("./Images/bakgrund_2.jpg");
+  background-repeat: no-repeat;
+}
+
+form {
+  background-color: #ffffff;
+  opacity: 0.9;
+  width: 325px;
+  
+}
+
+h1 {
+  font-family: 'Overpass Mono', monospace;
+  color: #ffffff;
+  padding: 45px 0 0 20px;
+  font-size: 18;
+}
+
+div {
+  padding: 10px;
+}
+
+
+
+button {
+  margin: 0 0 0 20px;
+}
+
+input .flex-outer {
+  width: 230px;
+  height: 25px;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #e5a3ad;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
